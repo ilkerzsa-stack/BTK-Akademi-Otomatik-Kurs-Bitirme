@@ -4,7 +4,7 @@ set_time_limit(-1);
 
 /* BU DEGERLERI DEGISTIRIN*/
 $cookie = "Bu alanı doldurunuz!";
-$kursURL = "https://www.btkakademi.gov.tr/portal/course/css-7453";
+$kursURL = "https://www.mrdiyakademi.com/Elearning/WEBUIPlayer?id=107382283&page=atananlar";
 /* BU DEGERLERI DEGISTIRIN*/
 
 
@@ -16,7 +16,7 @@ function btkAkademiTamamla($i, $cookie, $url)
     $curl = curl_init();
 
     curl_setopt_array($curl, array(
-        CURLOPT_URL => "https://www.btkakademi.gov.tr/portal/course/deliver/update-attempt/{$i}",
+        CURLOPT_URL => "https://www.mrdiyakademi.com/Elearning/WEBUIPlayer?id=107382283&page=atananlar{$i}",
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => "",
         CURLOPT_MAXREDIRS => 10,
@@ -31,7 +31,7 @@ function btkAkademiTamamla($i, $cookie, $url)
             "X-CSRF-TOKEN: e1c922a6-429d-484f-8f95-710219e6bf03",
             "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.125",
             "Content-Type: application/json;charset=UTF-8",
-            "Origin: https://www.btkakademi.gov.tr",
+            "Origin: https://www.mrdiyakademi.com/Elearning/WEBUIPlayer?id=107382283&page=atananlar",
             "Sec-Fetch-Site: same-origin",
             "Sec-Fetch-Mode: cors",
             "Sec-Fetch-Dest: empty",
