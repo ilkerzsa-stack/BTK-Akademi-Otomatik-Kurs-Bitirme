@@ -3,15 +3,15 @@
 set_time_limit(-1);
 
 /* BU DEGERLERI DEGISTIRIN*/
-$cookie = "Bu alanı doldurunuz!";
-$kursURL = "https://www.btkakademi.gov.tr/portal/course/css-7453";
+$cookie = "https://www.mrdiyakademi.com/Elearning/WEBUIPlayer?id=107382283&page=atananlar";
+$kursURL = "https://www.mrdiyakademi.com/Elearning/WEBUIPlayer?id=107382283&page=atananlar";
 /* BU DEGERLERI DEGISTIRIN*/
 
 
 $kursID = explode("/", $kursURL)[5];
 
 
-function btkAkademiTamamla($i, $cookie, $url)
+function https://www.mrdiyakademi.com/Elearning/WEBUIPlayer?id=107382283&page=atananlar($i, $cookie, $url)
 {
     $curl = curl_init();
 
